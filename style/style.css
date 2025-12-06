@@ -1,0 +1,283 @@
+ap{
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+body{
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+} 
+.thumb1{
+    width: 100%;   
+}
+.thumb2{
+    width: 100%;
+}
+.viddes1,.viddes2{
+    display: grid;
+    grid-template-columns:50px 1fr ;
+
+}
+
+
+.thumrow1,.thumrow2{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.l1,.l2{
+    height: 36px;
+    width: 36px;
+    border-radius: 30px;
+    
+}
+.tit1,.tit2{
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.aut1,.vie1,.aut2,.vie2{
+    font-size: 12px;
+    color: rgb(96, 96, 96);    
+}
+.aut1,.aut2{
+    margin-bottom: 4px;
+}
+.seabar{
+    flex: 1;
+    height: 36px;
+    padding-left:10px;
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius:2px ;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+    width: 0px;
+
+}
+.seabar::placeholder{
+    
+    font-size: 16px;
+}
+.vidgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+
+}
+@media (max-width: 750px) {
+    .vidgrid{
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+@media (min-width: 1000px) and (max-width: 750px)
+{
+    .vidgrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+    
+}
+
+@media (min-width: 1000px) {
+    .vidgrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }    
+}
+
+.menubar
+{
+    display: flex;
+    background-color: lightblue;
+    width: 73px;
+}
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+
+    border-bottom-width: 1px ;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(228, 228, 228) ;
+    z-index: 100;
+}
+.left{
+    
+    display: flex;
+    align-items: center;
+}
+.middle{
+    display: flex;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center;
+
+}
+
+.right{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.ylogo{
+    height: 20px;
+}
+.search{
+    height: 25px;
+
+    
+}
+.mic{
+    height: 24px;
+    margin-top: 4px;
+}
+.seabut,.voibut,.upload,.Apps,.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.seabut{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240, 240, 240) ;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(240, 240, 240) ;
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+}
+.seabut .sear,.voibut .sear,.upload .sear,.Apps .sear,.num .sear{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.seabut:hover,.upload:hover,.Apps:hover,.num:hover{
+    cursor: pointer;
+}
+
+.seabut:hover .sear,.voibut:hover .sear,.upload:hover .sear,.Apps:hover .sear,.num:hover .sear{
+    opacity: 1;
+}
+.voibut{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+.app{
+    height: 25px;
+    width: 25px;
+}
+.noti{
+    height: 25px;
+}
+.num{
+    position: relative;
+}
+.noticount{
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    background-color: red;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    color: white;
+}
+.up1{
+    height: 25px;
+}
+.channel{
+    height: 25Px;
+    width: 25px;
+    border-radius: 12.5px;
+}
+.sidebar{
+ position: fixed;
+ background-color: white;
+ width: 72px;
+ top: 55px;
+ left: 0px;
+ right: 0px;
+ bottom: 0px;
+ z-index: 200px;
+ padding-top: 5px;
+}
+.vidtim{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+}
+.sidbarlink{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+.sidbarlink:hover{
+    background-color: rgb(235, 235, 235);
+
+}
+.sidbarlink img{
+    height: 24px;
+    margin-bottom: 4px;
+
+}
+.sidbarlink div{
+    font-size: 10px;
+}
+
+/**/
